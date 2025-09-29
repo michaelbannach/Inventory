@@ -1,0 +1,26 @@
+# Build
+bin/
+obj/
+*.pdb
+*.mdb
+
+# Logs
+Logs/
+*.log
+
+# Tests
+TestResults/
+coverage/
+
+# IDE/OS
+.vscode/
+.idea/
+*.user
+*.rsuser
+*.suo
+.DS_Store
+Thumbs.db
+
+# Appsettings – echte Dateien ignorieren, Beispiele committen
+appsettings*.json
+!appsettings*.example.json
