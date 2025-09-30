@@ -1,9 +1,7 @@
 # Inventory (ASP.NET Core 8 + React)
-
-Kleine Lagerverwaltung (Items, Typen, Eigenschaften, Buchungen). Fokus: saubere Struktur, DTO-Boundary, ProblemDetails, Migrations.
+Kleine Lagerverwaltung (Artikel, Artikeltypen, Eigenschaften, Buchungen). Fokus: saubere Struktur, DTO-Boundary, ProblemDetails, Migrations.
 
 ## Features
-
 - Artikel inkl. Beschreibung, Typ, kritische Menge
 
 - Artikelarten mit frei definierbaren Eigenschaften
@@ -22,11 +20,9 @@ Kleine Lagerverwaltung (Items, Typen, Eigenschaften, Buchungen). Fokus: saubere 
 - Backend: ASP.NET Core 8, EF Core (SQL Server), Swagger, Health
 - Frontend: Vite + React + TypeScript + MUI/DataGrid
 
-## Screenshots
-## Screenshots
+
 
 ## Screenshots
-
 ### Artikel Übersicht 
 Liste aller Artikel mit Suche, Artikeltyp, Menge, kritischer Menge und letzter Änderung.
 
@@ -76,15 +72,16 @@ Beispielhafte UI-Interaktion (z. B. Anlage/Filter) – zeigt konsistente MUI-Dia
 
 ---
 
-### Warenausgänge (Liste)
+### Dialog um einen Wareneingang zu buchen
 Übersicht der zuletzt gebuchten **Warenausgänge** mit Positionszusammenfassung und Zeitstempel.
 
 ![Warenausgänge](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-41%20Items%20%C3%9Cbersicht.png)
 
 ---
 
-### Dialog um neuen Artikel hin
+### Dialog um Warenausgang zu buchen
 Weiteres Interaktionsbeispiel – konsistentes Look-and-Feel über alle Dialoge/Formulare.
+
 ![Beispiel 2](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-57%20Items%20%C3%9Cbersicht.png)
 
 
