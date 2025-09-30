@@ -47,8 +47,9 @@ Gefilterte Ansicht für **einen Raum** (z. B. „Raum 1“) – zeigt nur Bestä
 
 ---
 
-### Artikel im Raum (Ansicht 2)
-Gleiche Raumansicht mit weiteren Zeilen; Artikeltyp ist klickbar, um nach Typ zu filtern.
+### Wareneingang Übersicht
+Übersicht aller Wareneingänge, mit Auflistung einzelner Positionen
+
 ![Items – Raum 1 (2)](docs/screenshots/Screenshot%202025-09-29%20at%2020-36-43%20Items%20%E2%80%93%20Raum%201.png)
 
 ---
