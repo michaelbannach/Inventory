@@ -1,5 +1,5 @@
 # Inventory (ASP.NET Core 8 + React)
-Kleine Lagerverwaltung (Artikel, Artikeltypen, Eigenschaften, Buchungen). Fokus: saubere Struktur, DTO-Boundary, ProblemDetails, Migrations.
+Kleine Lagerverwaltung (Artikel, Artikelart, Eigenschaften, Buchungen). Fokus: saubere Struktur, DTO-Boundary, ProblemDetails, Migrations.
 
 ## Features
 - Artikel inkl. Beschreibung, Typ, kritische Menge
@@ -30,7 +30,7 @@ Liste aller Artikel mit Suche, Artikeltyp, Menge, kritischer Menge und letzter �
 
 ---
 
-### Artikeltyp Übersicht 
+### Artikelart Übersicht 
 Liste aller Artikeltypen
 
 ![Items Übersicht 2](docs/screenshots/Screenshot%202025-09-29%20at%2020-35-33%20Items%20%C3%9Cbersicht.png)
