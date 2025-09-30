@@ -54,8 +54,9 @@ Gefilterte Ansicht für **einen Raum** (z. B. „Raum 1“) – zeigt nur Bestä
 
 ---
 
-### Artikel im Raum (Ansicht 3)
-Raumansicht mit aktiver Top-Suche – schnelle Kombination aus Standort- und Textfilter.
+### Warenausgang Übersicht
+Übersicht aller Warenausgänge, mit Auflistung des Datums und der Kunden (in Beschreibung)
+
 ![Items – Raum 1 (3)](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-00%20Items%20%E2%80%93%20Raum%201.png)
 
 ---
