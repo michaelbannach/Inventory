@@ -1,4 +1,4 @@
-# IVU Inventory (ASP.NET Core 8 + React)
+# Inventory (ASP.NET Core 8 + React)
 
 Kleine Lagerverwaltung (Items, Typen, Eigenschaften, Buchungen). Fokus: saubere Struktur, DTO-Boundary, ProblemDetails, Migrations.
 
