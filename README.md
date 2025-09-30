@@ -65,7 +65,7 @@ Beispielhafte UI-Interaktion (z. B. Anlage/Filter) – zeigt konsistente MUI-Dia
 
 ---
 
-### Dialog um einen neuen Artiekltypen hinzuzufügen
+### Dialog um eine neue Artikelart hinzuzufügen
 Übersicht der zuletzt gebuchten **Wareneingänge** mit Positionszusammenfassung und Zeitstempel.
 
 ![Wareneingänge](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-24%20Items%20%C3%9Cbersicht.png)
