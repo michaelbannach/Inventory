@@ -43,6 +43,7 @@ Liste aller Artikeltypen
 
 ### Artikel nach Lagerort
 Gefilterte Ansicht für **einen Raum** (z. B. „Raum 1“) – zeigt nur Bestände an diesem Standort.
+
 ![Items – Raum 1 (1)](docs/screenshots/Screenshot%202025-09-29%20at%2020-36-29%20Items%20%E2%80%93%20Raum%201.png)
 
 ---
@@ -61,25 +62,28 @@ Gefilterte Ansicht für **einen Raum** (z. B. „Raum 1“) – zeigt nur Bestä
 
 ---
 
-### Dialoge/Listen – Beispiel 1
+### Dialog um einen neuen Artikel hinzuzufügen
 Beispielhafte UI-Interaktion (z. B. Anlage/Filter) – zeigt konsistente MUI-Dialoge und Validierung.
+
 ![Beispiel 1](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-13%20Items%20%C3%9Cbersicht.png)
 
 ---
 
-### Wareneingänge (Liste)
+### Dialog um einen neuen Artiekltypen hinzuzufügen
 Übersicht der zuletzt gebuchten **Wareneingänge** mit Positionszusammenfassung und Zeitstempel.
+
 ![Wareneingänge](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-24%20Items%20%C3%9Cbersicht.png)
 
 ---
 
 ### Warenausgänge (Liste)
 Übersicht der zuletzt gebuchten **Warenausgänge** mit Positionszusammenfassung und Zeitstempel.
+
 ![Warenausgänge](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-41%20Items%20%C3%9Cbersicht.png)
 
 ---
 
-### Dialoge/Listen – Beispiel 2
+### Dialog um neuen Artikel hin
 Weiteres Interaktionsbeispiel – konsistentes Look-and-Feel über alle Dialoge/Formulare.
 ![Beispiel 2](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-57%20Items%20%C3%9Cbersicht.png)
 
