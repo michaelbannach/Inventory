@@ -1,95 +1,56 @@
 # Inventory (ASP.NET Core 8 + React)
-Kleine Lagerverwaltung (Artikel, Artikeltypen, Eigenschaften, Buchungen). Fokus: saubere Struktur, DTO-Boundary, ProblemDetails, Migrations.
+
+Kleine Lagerverwaltung (Items, Typen, Eigenschaften, Buchungen). Fokus: saubere Struktur, DTO-Boundary, ProblemDetails, Migrations.
+
+![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=000)
+![Vite](https://img.shields.io/badge/Vite-React%20TS-646CFF?logo=vite&logoColor=fff)
+![EF Core](https://img.shields.io/badge/EF%20Core-8.0-512BD4)
+
+## Inhalt
+- [Features](#features)
+- [Stack](#stack)
+- [Lokal starten](#lokal-starten)
+- [Screenshots](#screenshots)
+- [API](#api)
+- [Projektstruktur](#projektstruktur)
+
+---
 
 ## Features
-- Artikel inkl. Beschreibung, Typ, kritische Menge
 
-- Artikelarten mit frei definierbaren Eigenschaften
+- Artikel inkl. Beschreibung, Typ, Menge & kritischer Menge  
+- Artikelsuche (Serverfilter) & Typ-/Raum-Filter
+- Dynamische Eigenschaften pro Artikeltyp (PropertyDefinitions)
+- Ein-/Ausgänge mit mehreren Positionen (StockIn/StockOut)
+- Saubere Fehlerausgabe via **ProblemDetails** (RFC 7807)
+- Swagger UI & Health-Endpoint
+- EF Core Migrations (SQL Server)
 
-- Wareneingänge &  Warenausgänge (mehrere Positionen)
-
-- Standorte (Raum, Regal, Fach) & Bestandsanzeige je Raum
-
-- Suche/Filter (Name, Beschreibung, Typ, Raum)
-
-- DTO-Boundary, ProblemDetails (RFC 7807), Swagger/OpenAPI
-
-- EF Core (SQL Server) mit Migrations
+---
 
 ## Stack
-- Backend: ASP.NET Core 8, EF Core (SQL Server), Swagger, Health
-- Frontend: Vite + React + TypeScript + MUI/DataGrid
 
-
-
-## Screenshots
-### Artikel Übersicht 
-Liste aller Artikel mit Suche, Artikeltyp, Menge, kritischer Menge und letzter Änderung.
-
-![Items Übersicht 1](docs/screenshots/Screenshot%202025-09-29%20at%2020-35-21%20Items%20%C3%9Cbersicht.png)
+- **Backend:** ASP.NET Core 8, EF Core (SQL Server), Swagger, Health
+- **Frontend:** Vite + React + TypeScript + MUI/DataGrid
 
 ---
-
-### Artikeltyp Übersicht 
-Liste aller Artikeltypen
-
-![Items Übersicht 2](docs/screenshots/Screenshot%202025-09-29%20at%2020-35-33%20Items%20%C3%9Cbersicht.png)
-
----
-
-### Artikel nach Lagerort
-Gefilterte Ansicht für **einen Raum** (z. B. „Raum 1“) – zeigt nur Bestände an diesem Standort.
-
-![Items – Raum 1 (1)](docs/screenshots/Screenshot%202025-09-29%20at%2020-36-29%20Items%20%E2%80%93%20Raum%201.png)
-
----
-
-### Wareneingang Übersicht
-Übersicht aller Wareneingänge, mit Auflistung einzelner Positionen
-
-![Items – Raum 1 (2)](docs/screenshots/Screenshot%202025-09-29%20at%2020-36-43%20Items%20%E2%80%93%20Raum%201.png)
-
----
-
-### Warenausgang Übersicht
-Übersicht aller Warenausgänge, mit Auflistung des Datums und der Kunden (in Beschreibung)
-
-![Items – Raum 1 (3)](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-00%20Items%20%E2%80%93%20Raum%201.png)
-
----
-
-### Dialog um einen neuen Artikel hinzuzufügen
-Beispielhafte UI-Interaktion (z. B. Anlage/Filter) – zeigt konsistente MUI-Dialoge und Validierung.
-
-![Beispiel 1](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-13%20Items%20%C3%9Cbersicht.png)
-
----
-
-### Dialog um eine neue Artikelart hinzuzufügen
-Übersicht der zuletzt gebuchten **Wareneingänge** mit Positionszusammenfassung und Zeitstempel.
-
-![Wareneingänge](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-24%20Items%20%C3%9Cbersicht.png)
-
----
-
-### Dialog um einen Wareneingang zu buchen
-Übersicht der zuletzt gebuchten **Warenausgänge** mit Positionszusammenfassung und Zeitstempel.
-
-![Warenausgänge](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-41%20Items%20%C3%9Cbersicht.png)
-
----
-
-### Dialog um Warenausgang zu buchen
-Weiteres Interaktionsbeispiel – konsistentes Look-and-Feel über alle Dialoge/Formulare.
-
-![Beispiel 2](docs/screenshots/Screenshot%202025-09-29%20at%2020-37-57%20Items%20%C3%9Cbersicht.png)
-
 
 ## Lokal starten
-**Backend**
+
+### Backend
 ```bash
+cd Inventory
+
+# 1) User-Secrets initialisieren und Konfiguration setzen
 dotnet user-secrets init
-dotnet user-secrets set "ConnectionStrings:DefaultConnection" "<dein-conn-string>"
+dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Server=localhost;Database=Inventory_db;Trusted_Connection=True;TrustServerCertificate=True;"
 dotnet user-secrets set "FrontendOrigin" "http://localhost:5173"
+
+# 2) Datenbank migrieren
 dotnet ef database update
+
+# 3) Starten (standardmäßig http://localhost:5195)
 dotnet run
+# Swagger: http://localhost:5195/swagger
+# Health:  http://localhost:5195/health
