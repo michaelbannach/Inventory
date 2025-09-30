@@ -27,19 +27,21 @@ Kleine Lagerverwaltung (Items, Typen, Eigenschaften, Buchungen). Fokus: saubere 
 
 ## Screenshots
 
-### Items Übersicht (1)
-Startliste aller Artikel mit Suche, Artikeltyp, Menge, kritischer Menge und letzter Änderung.
+### Artikel Übersicht 
+Liste aller Artikel mit Suche, Artikeltyp, Menge, kritischer Menge und letzter Änderung.
+
 ![Items Übersicht 1](docs/screenshots/Screenshot%202025-09-29%20at%2020-35-21%20Items%20%C3%9Cbersicht.png)
 
 ---
 
-### Items Übersicht (2)
-Weitere Zeilen/Beispiele – zeigt, wie lange Beschreibungen und Typ-Links im Grid dargestellt werden.
+### Artikeltyp Übersicht 
+Liste aller Artikeltypen
+
 ![Items Übersicht 2](docs/screenshots/Screenshot%202025-09-29%20at%2020-35-33%20Items%20%C3%9Cbersicht.png)
 
 ---
 
-### Artikel im Raum (Ansicht 1)
+### Artikel nach Lagerort
 Gefilterte Ansicht für **einen Raum** (z. B. „Raum 1“) – zeigt nur Bestände an diesem Standort.
 ![Items – Raum 1 (1)](docs/screenshots/Screenshot%202025-09-29%20at%2020-36-29%20Items%20%E2%80%93%20Raum%201.png)
 
